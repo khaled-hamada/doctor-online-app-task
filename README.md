@@ -30,6 +30,7 @@ after that provide the token in the comming request to backend using this extens
 https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj?src=modheader 
  after installing it use request headers and provide the token this way :
   Authorization   Token token_string
+  ![alt text](authentication.png)
 # to edit your account data like password or user name go to :
     http://localhost:8000/api/accounts/me 
 
