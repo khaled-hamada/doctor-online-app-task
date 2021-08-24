@@ -1,7 +1,7 @@
 In order to test out this project, follow these steps:
 
 clone the repository to your local machine
-# create virtula enivronment
+# create virtual enivronment
 run: python3 -m venv venv
 
 then activate the virtual environment run in the cmd  venv\Scripts\activate
@@ -26,22 +26,22 @@ to create a new account , use Row data  instead of HTML form to provide an extra
                 to create a super user account to access the django admin page , please use the command line
 # after creating new account successfully 
 got to    http://localhost:8000/api/accounts/token  to authenticate yourself and get the token 
-after that provide the token in the comming request to backend using this extention 
+after that provide the token in the comming request to backend using this extension 
 https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj?src=modheader 
  after installing it use request headers and provide the token this way :
-   Token token_string
+  Authorization   Token token_string
 # to edit your account data like password or user name go to :
     http://localhost:8000/api/accounts/me 
 
 # Note :
-  doctors can not access patients api endpoint and vice vera
+  doctors can not access patients api endpoint and vice versa
 
 # use the clinics api 
 # 1. doctors 
   go to   http://localhost:8000/api/clinics/doctors  to list all doctor clinics reservation 
-  Note: you must an authenticated doctor account to access this api 
+  Note: you must use an authenticated doctor account to access this api 
 # 2. patients 
-    Note: you must an authenticated patient account to access this api 
+    Note: you must use an authenticated patient account to access this api 
     All CRUD operations are provided (list, create, delete, update both put and patch)
     A. go to http://localhost:8000/api/clinics/patients  -> for both listing reserved clincis and creating new ones 
     B. go to http://localhost:8000/api/clinics/patients/pk/ -> for update/delete reserved clinics 
